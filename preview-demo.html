@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Link Preview Demo — Mukesh Kumar</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#f2efe8;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;color:#17170f;line-height:1.5;padding:40px 20px 80px;}
+  .demo{max-width:760px;margin:0 auto;}
+  header{text-align:center;margin-bottom:48px;}
+  header h1{font-size:34px;font-weight:800;letter-spacing:-.5px;margin-bottom:10px;}
+  header p{color:#5f5b51;font-size:15px;max-width:560px;margin:0 auto;}
+  .note{background:#fef3c7;border:1px solid #eab308;color:#7c5a02;border-radius:12px;padding:14px 18px;font-size:13.5px;margin-top:18px;text-align:left;}
+  h2{font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8a857a;margin:44px 0 16px;}
+  a{text-decoration:none;color:inherit;}
+
+  /* ---------- WhatsApp ---------- */
+  .wa-bg{background:#e5ddd5;border-radius:18px;padding:18px;display:flex;justify-content:flex-start;}
+  .wa-card{background:#fff;border-radius:8px;overflow:hidden;display:flex;max-width:440px;box-shadow:0 1px 2px rgba(0,0,0,.15),0 0 0 1px rgba(0,0,0,.06);}
+  .wa-thumb{width:120px;min-height:120px;background:#e9e9e9;border-right:1px solid #eee;}
+  .wa-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .wa-info{padding:12px 14px;flex:1;}
+  .wa-site{font-size:11px;color:#8a857a;text-transform:uppercase;letter-spacing:.02em;margin-bottom:5px;}
+  .wa-title{font-size:14.5px;font-weight:700;line-height:1.3;color:#333;margin-bottom:6px;}
+  .wa-desc{font-size:13px;color:#5f5b51;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+  .wa-meta{font-size:11px;color:#8a857a;}
+
+  /* ---------- Facebook / LinkedIn ---------- */
+  .fb-bg{background:#f0f2f5;border-radius:18px;padding:18px;display:flex;justify-content:center;}
+  .fb-card{background:#fff;border:1px solid #dddfe2;border-radius:8px;overflow:hidden;max-width:500px;width:100% ;box-shadow:0 1px 2px rgba(0,0,0,.08);}
+  .fb-img{background:#e9e9e9;}
+  .fb-img img{width:100%;display:block;}
+  .fb-body{padding:14px 16px;}
+  .fb-site{font-size:11px;color:#5f5b51;text-transform:uppercase;letter-spacing:.02em;margin-bottom:4px;}
+  .fb-title{font-size:17px;font-weight:700;color:#1d2129;line-height:1.3;margin-bottom:6px;}
+  .fb-desc{font-size:13.5px;color:#5f5b51;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .fb-meta{font-size:12px;color:#8a857a;margin-top:8px;border-top:1px solid #eee;padding-top:8px;}
+
+  /* ---------- Telegram ---------- */
+  .tg-bg{background:#0b141a;border-radius:18px;padding:18px;display:flex;justify-content:flex-end;}
+  .tg-card{background:#182533;border-radius:10px;overflow:hidden;max-width:400px;box-shadow:0 2px 6px rgba(0,0,0,.3);}
+  .tg-imgwrap{background:#203140;max-height:160px;overflow:hidden;}
+  .tg-imgwrap img{width:100%;display:block;object-fit:cover;max-height:160px;}
+  .tg-body{padding:12px 14px;}
+  .tg-site{font-size:11.5px;color:#7d8b91;margin-bottom:5px;}
+  .tg-title{font-size:15px;font-weight:700;color:#fff;line-height:1.3;margin-bottom:6px;}
+  .tg-desc{font-size:13px;color:#b8c0c4;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+  .tg-meta{font-size:11.5px;color:#7d8b91;margin-top:8px;}
+  .real-url{margin-top:14px;font-size:12px;color:#8a857a;word-break:break-all;}
+  footer{margin-top:56px;text-align:center;font-size:12.5px;color:#8a857a;}
+</style>
+</head>
+<body>
+<div class="demo">
+
+  <header>
+    <h1>🔗 Link Preview Demo</h1>
+    <p>Ye dikhta hai jab aap <b>Mukeshprjpt01.github.io/Portfolio</b> ka link share karte ho — WhatsApp, Facebook/LinkedIn, aur Telegram style mein.</p>
+    <div class="note">⚠️ <b>Actual previews tab tak nahi dikhenge jab tak GitHub Pages enable nahi hota.</b> Abhi site 404 de rahi hai. Pehle karo: <b>Repo → Settings → Pages → Source: "Deploy from a branch" → Branch: main, Folder: / (root) → Save.</b> Enable hone ke baad yehi previews dikhengi.</div>
+  </header>
+
+  <h2>💬 WhatsApp — jaise dikhega</h2>
+  <div class="wa-bg">
+    <a class="wa-card" href="https://Mukeshprjpt01.github.io/Portfolio/" target="_blank">
+      <div class="wa-thumb"><img src="images/hero.jpg" alt=""></div>
+      <div class="wa-info">
+        <div class="wa-site">MUKESHPRJPT01.GITHUB.IO</div>
+        <div class="wa-title">Mukesh Kumar — MERN Stack Developer &amp; SDE</div>
+        <div class="wa-desc">Building scalable full-stack applications with real-time systems, secure backend architecture,and strong DSA fundamentals.</div>
+        <div class="wa-meta">👍 ❤️ 😮 😢</div>
+      </div>
+    </a>
+  </div>
+  <div class="real-url">Aap share karoge: https://Mukeshprjpt01.github.io/Portfolio/</div>
+
+  <h2>📘 Facebook / LinkedIn — jaise dikhega</h2>
+  <div class="fb-bg">
+    <a class="fb-card" href="https://Mukeshprjpt01.github.io/Portfolio/" target="_blank">
+      <div class="fb-img"><img src="images/og-image.jpg" alt=""></div>
+      <div class="fb-body">
+        <div class="fb-site">MUKESHPRJPT01.GITHUB.IO</div>
+        <div class="fb-title">Mukesh Kumar — MERN Stack Developer &amp; SDE</div>
+        <div class="fb-desc">Building scalable full-stack applications with real-time systems, secure backend architecture,and strong DSA fundamentals.</div>
+        <div class="fb-meta">Mukesh Kumar — Portfolio · Mukeshprjpt01.github.io</div>
+      </div>
+    </a>
+  </div>
+  <div class="real-url">LinkedIn/Facebook par aata hai: ek bari image (1200×630) top par, neeche title, phir domain.</div>
+
+  <h2>✈️ Telegram — jaise dikhega</h2>
+  <div class="tg-bg">
+    <a class="tg-card" href="https://Mukeshprjpt01.github.io/Portfolio/" target="_blank">
+      <div class="tg-imgwrap"><img src="images/og-image.jpg" alt=""></div>
+      <div class="tg-body">
+        <div class="tg-site">MUKESHPRJPT01.GITHUB.IO</div>
+        <div class="tg-title">Mukesh Kumar — MERN Stack Developer &amp; SDE</div>
+        <div class="tg-desc">Building scalable full-stack applications with real-time systems, secure backend architecture,and strong DSA fundamentals.</div>
+        <div class="tg-meta">🔗 Mukeshprjpt01.github.io/Portfolio</div>
+      </div>
+    </a>
+  </div>
+  <div class="real-url">Telegram dark bubble mein isi tarah card dikhta hai.</div>
+
+  <footer>Ye demo file sirf preview dikhane ke liye hai — ye GitHub par bhi deploy ho gayi hai (<b>/preview-demo.html</b>) par woh bhi Pages on hone ke baad hi khulega.</footer>
+</div>
+</body>
+</html>
